@@ -79,12 +79,16 @@ const Card = () => {
       <div>
         <img src={picture?.large} alt="avatar" className="rounded-circle" />
         <p>My {userInfo.alt ? userInfo.alt : "name"} is</p>
-        <h4>{userInfo.name ? userInfo.name : name?.first}</h4>
+        <h4>
+          {userInfo.name
+            ? userInfo.name
+            : name?.title + " " + name?.first + " " + name?.last}
+        </h4>
         <div className="d-flex justify-content-evenly m-3">
           <img
             src={gender === "male" ? man : woman}
             alt="name"
-            name={name?.first}
+            name={name?.title + " " + name?.first + " " + name?.last}
             width="50rem"
             height="50rem"
             onClick={changeInfo}
@@ -111,7 +115,7 @@ const Card = () => {
           <img
             src={map}
             alt="street"
-            name={location?.street?.name}
+            name={location?.street?.number + " " + location?.street?.name}
             width="50rem"
             height="50rem"
             onClick={changeInfo}

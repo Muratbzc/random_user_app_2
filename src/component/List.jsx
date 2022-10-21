@@ -15,14 +15,16 @@ const List = ({ addList }) => {
           </thead>
           <tbody>
             {addList.map((item, index) => {
-              const { name, dob, phone, email, id } = item;
+              const { name, dob, phone, email } = item;
 
               return (
                 <tr className="body-tr" key={index}>
-                  <td>{name.first}</td>
+                  <td>
+                    {name.first} {name.last}
+                  </td>
                   <td>{email}</td>
                   <td>{phone}</td>
-                  <td>{dob?.age}</td>
+                  <td>{dob.age}</td>
                 </tr>
               );
             })}
