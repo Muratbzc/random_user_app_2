@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #f2f3ea 67%);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.img-btn:active {
+  transform: scale(1.2);
+}
+
+button:active {
+  transform: scale(1.2);
+}
+
+th {
+  background-color: aqua;
+  border: 2px solid white;
+}
