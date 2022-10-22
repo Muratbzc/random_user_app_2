@@ -11,6 +11,6 @@ Our goal in this project is to create Build a Random User App using ReactJS.
 ## Objective
 
   - Build a random user App using ReactJS.
-  - Fetch new user on random user button click
+  - Fetch new user on NEW USER button click.
 
 <button><a href="https://muratbzc.github.io/random_user_app_2/">Go To Web Site</a></button>
