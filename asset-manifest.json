@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/random_user_app_2/static/css/main.db8d1515.css",
-    "main.js": "/random_user_app_2/static/js/main.f00a4a56.js",
+    "main.css": "/random_user_app_2/static/css/main.26788b6f.css",
+    "main.js": "/random_user_app_2/static/js/main.bd5560fb.js",
     "static/media/map.svg": "/random_user_app_2/static/media/map.8e5a2a587d26cff3ce6d9abc58da8f5f.svg",
     "static/media/growing-up-woman.svg": "/random_user_app_2/static/media/growing-up-woman.a158584281f99f0d709c59ea4dee167e.svg",
     "static/media/growing-up-man.svg": "/random_user_app_2/static/media/growing-up-man.5024153b1b81cd13bdb8e51fd323551f.svg",
@@ -11,11 +11,11 @@
     "static/media/padlock.svg": "/random_user_app_2/static/media/padlock.8d2c33d2e558cdfc835d35b8ace79550.svg",
     "static/media/phone.svg": "/random_user_app_2/static/media/phone.d017e1ae418c694ba9148c0a9001609c.svg",
     "index.html": "/random_user_app_2/index.html",
-    "main.db8d1515.css.map": "/random_user_app_2/static/css/main.db8d1515.css.map",
-    "main.f00a4a56.js.map": "/random_user_app_2/static/js/main.f00a4a56.js.map"
+    "main.26788b6f.css.map": "/random_user_app_2/static/css/main.26788b6f.css.map",
+    "main.bd5560fb.js.map": "/random_user_app_2/static/js/main.bd5560fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.db8d1515.css",
-    "static/js/main.f00a4a56.js"
+    "static/css/main.26788b6f.css",
+    "static/js/main.bd5560fb.js"
   ]
 }
