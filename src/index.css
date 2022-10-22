@@ -38,3 +38,12 @@ button {
     font-size: 12px;
   }
 }
+@media screen and (max-width: 500px) {
+  table {
+    font-size: 9px;
+  }
+  .img-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}

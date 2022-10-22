@@ -19,9 +19,7 @@ const List = ({ addList }) => {
 
               return (
                 <tr className="body-tr" key={index}>
-                  <td>
-                    {name.first} {name.last}
-                  </td>
+                  <td>{name.first}</td>
                   <td>{email}</td>
                   <td>{phone}</td>
                   <td>{dob.age}</td>
