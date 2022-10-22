@@ -74,10 +74,10 @@ const Card = () => {
 
   return (
     <Container
-      className="text-center bg-light mt-5 p-4 "
+      className="text-center bg-light mt-5 p-4 card"
       style={{
         backgroundImage: "linear-gradient(180deg, #CACAC1 0%, #fafafa 33%)",
-        width: "50rem",
+        // width: "50rem",
       }}
     >
       <div>
