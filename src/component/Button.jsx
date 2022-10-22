@@ -4,7 +4,10 @@ const Button = ({ newUser, addUser, delAll, disable }) => {
       <button onClick={newUser} className="btn btn-warning">
         NEW USER
       </button>
-      <button onClick={disable && addUser} className="btn btn-warning ">
+      <button
+        onClick={disable ? addUser : undefined}
+        className="btn btn-warning "
+      >
         ADD USER
       </button>
       <button onClick={delAll} className="btn btn-danger">
