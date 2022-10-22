@@ -14,6 +14,7 @@ import List from "./List";
 
 const Card = () => {
   const [user, setUser] = useState("");
+  const [disable, setDisable] = useState(true);
 
   const getUserFromApi = async () => {
     const url = "https://randomuser.me/api/";
@@ -26,6 +27,7 @@ const Card = () => {
         alt: "",
         name: "",
       });
+      setDisable(true);
     } catch (error) {
       console.log(error);
     }
@@ -62,10 +64,12 @@ const Card = () => {
       },
       ...addList,
     ]);
+    setDisable(false);
   };
 
   const delAll = () => {
     setAddList("");
+    setDisable(true);
   };
 
   return (
@@ -141,7 +145,12 @@ const Card = () => {
           />
         </div>
       </div>
-      <Button newUser={getUserFromApi} addUser={addUser} delAll={delAll} />
+      <Button
+        newUser={getUserFromApi}
+        addUser={addUser}
+        delAll={delAll}
+        disable={disable}
+      />
       <List addList={addList} />
     </Container>
   );
