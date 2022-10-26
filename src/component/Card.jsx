@@ -14,7 +14,7 @@ import List from "./List";
 
 const Card = () => {
   const [user, setUser] = useState("");
-  const [disable, setDisable] = useState(true);
+  // const [disable, setDisable] = useState(true);
 
   const getUserFromApi = async () => {
     const url = "https://randomuser.me/api/";
@@ -27,7 +27,7 @@ const Card = () => {
         alt: "",
         name: "",
       });
-      setDisable(true);
+      // setDisable(true);
     } catch (error) {
       console.log(error);
     }
@@ -54,22 +54,26 @@ const Card = () => {
   const [addList, setAddList] = useState([]);
 
   const addUser = () => {
-    setAddList([
-      {
-        name: name,
-        email: email,
-        dob: dob,
-        phone: phone,
-        id: id,
-      },
-      ...addList,
-    ]);
-    setDisable(false);
+    const repeat = addList.some((item) => item.email === user.email);
+
+    !repeat &&
+      setAddList([
+        {
+          name: name,
+          email: email,
+          dob: dob,
+          phone: phone,
+          id: id,
+        },
+        ...addList,
+      ]);
+
+    // setDisable(false);
   };
 
   const delAll = () => {
     setAddList("");
-    setDisable(true);
+    // setDisable(true);
   };
 
   return (
@@ -149,7 +153,7 @@ const Card = () => {
         newUser={getUserFromApi}
         addUser={addUser}
         delAll={delAll}
-        disable={disable}
+        // disable={disable}
       />
       <List addList={addList} />
     </Container>
